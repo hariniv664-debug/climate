@@ -1,0 +1,92 @@
+/* style.css */
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #4CAF50;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 24px;
+}
+
+/* Navigation */
+nav {
+  background: #333;
+  padding: 10px;
+  text-align: center;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+}
+nav a:hover {
+  color: #4CAF50;
+}
+
+/* Shop Items */
+.shop-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.shop-item {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.shop-item img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.shop-item h3 {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.shop-item p {
+  font-size: 16px;
+  color: #555;
+}
+
+button.add-to-cart {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+button.add-to-cart:hover {
+  background: #45a049;
+}
+
+/* Cart Display */
+#cart-count {
+  font-weight: bold;
+  color: yellow;
+}
